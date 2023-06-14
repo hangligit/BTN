@@ -1,0 +1,24 @@
+python eval.py T2R1
+python eval.py T2R2
+python eval.py T2R4
+python eval.py T2R5
+
+python eval.py T6R1
+
+python eval.py T8R1
+python eval.py T8R3
+
+python eval.py T9R3
+
+python eval.py TSKG --save tskg_result.pkl
+
+echo 'visual'
+python visual_eval.py T2R1
+cd /home/ubuntu/Visual_Relation_Cog/evaluation
+./evaluation ours
+cd ../Public/tensorbrain
+
+python visual_eval.py T2R2t
+cd /home/ubuntu/Visual_Relation_Cog/evaluation
+./evaluation ours
+cd ../Public/tensorbrain
